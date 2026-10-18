@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Nursery, Junior KG and Senior KG programs at The Brave Lion Pre-Primary School.">
-  <title>Programs | The Brave Lion Pre-Primary School</title>
+  <meta name="description" content="Learn about The Brave Lion Pre-Primary School, a joyful learning environment for Nursery, Junior KG, and Senior KG.">
+  <title>About Us | The Brave Lion Pre-Primary School</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
@@ -85,7 +85,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .footer h3{color:var(--yellow);margin:0 0 8px}
 .footer a{display:block;color:#fff;text-decoration:none;margin:4px 0}
 .footer p{color:#f6dde0;max-width:400px}
-.copyright{margin-top:28px;padding-top:18px;border-top:1px solid #ffffff33;color:#f6dde0;font-size:14px}
+.copyright{margin-top:28px;padding-top:18px;border-top:1px solid #ffffff33;color:#f6dde0;font-size:14px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px 20px}
+.footer .powered a{display:inline;margin:0;font-weight:800;color:var(--yellow)}
+.footer .powered a:hover{text-decoration:underline}
 
 /* ---------- Scroll motion (enabled by JS) ---------- */
 .motion-ready .scroll-motion{--scroll-offset:34px;--scroll-inverse-offset:-34px;--scroll-opacity:.22;opacity:var(--scroll-opacity);transform:translate3d(0,var(--scroll-offset),0);transition:opacity .16s linear,transform .16s cubic-bezier(.22,.8,.3,1),box-shadow .3s ease;will-change:opacity,transform}
@@ -101,41 +103,30 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 
   </style>
   <style>
-    .program{background:#fff;border:1px solid var(--line);border-radius:26px;padding:29px;box-shadow:0 8px 25px #7b1e2b0d;text-align:left}
-    .program .icon{width:58px;height:58px;border-radius:18px;font-size:30px}
-    .program:nth-child(2) .icon{background:var(--blue)}.program:nth-child(3) .icon{background:var(--green)}
-    .program h2{font:800 29px/1.1 'Baloo 2',cursive;color:var(--deep);margin:16px 0 10px}
-    .program p{color:#68575b}
-    .program ul{padding-left:19px;margin:18px 0 0}.program li{margin:7px 0;font-weight:700}
-    .intro p.sub{max-width:680px;margin:auto;color:#68575b;font-size:17px}
-    .note{background:#fff4ec;text-align:center;padding:24px;border-radius:20px;margin-top:35px;color:#68575b}
-    @media(max-width:860px){.grid{grid-template-columns:1fr}}
+    .split{display:grid;grid-template-columns:1fr 1.2fr;gap:58px;align-items:center}
+    .approach{background:#fff4ec}
+    @media(max-width:860px){.split{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
   <header class="nav"><div class="container">
     <div class="nav-in">
-      <p class="nav-quote">“Growing brave hearts, <span>one smile at a time.</span>”</p>
-      <nav class="nav-links" aria-label="Main navigation"><span class="nav-pill" aria-hidden="true"></span><a href="../">Home</a><a href="../about/">About Us</a><a href="./" aria-current="page">Programs</a><a href="../activities/">Activities</a><a href="../contact/">Contact</a><a href="../admissions/">Admissions</a></nav>
+      <p class="nav-quote">“Every little learner is a <span>big dreamer.</span>”</p>
+      <nav class="nav-links" aria-label="Main navigation"><span class="nav-pill" aria-hidden="true"></span><a href="../">Home</a><a href="./" aria-current="page">About Us</a><a href="../programs/">Programs</a><a href="../activities/">Activities</a><a href="../contact/">Contact</a><a href="../admissions/">Admissions</a></nav>
       <button class="menu" id="menu" type="button" aria-expanded="false" aria-controls="mobile">Menu</button>
     </div>
-    <nav class="mobile" id="mobile" aria-label="Mobile navigation"><a href="../">Home</a><a href="../about/">About Us</a><a href="./" aria-current="page">Programs</a><a href="../activities/">Activities</a><a href="../contact/">Contact</a><a href="../admissions/">Admissions</a></nav>
+    <nav class="mobile" id="mobile" aria-label="Mobile navigation"><a href="../">Home</a><a href="./" aria-current="page">About Us</a><a href="../programs/">Programs</a><a href="../activities/">Activities</a><a href="../contact/">Contact</a><a href="../admissions/">Admissions</a></nav>
   </div></header>
 
   <main>
-    <section class="page-hero"><div class="container"><span class="eyebrow">Our programs</span><h1>Little steps, joyful learning</h1><p>Purposeful, play-based experiences for young children at every stage of their early learning journey.</p></div></section>
+    <section class="page-hero"><div class="container"><span class="eyebrow">About The Brave Lion</span><h1>A warm place to learn, play and grow</h1><p>A joyful, caring, and child-friendly pre-primary school for Nursery, Junior KG, and Senior KG learners.</p></div></section>
 
-    <section class="section"><div class="container intro center"><span class="eyebrow">Pre-primary only</span><h2 class="title">Learning made for little learners</h2><p class="sub">We offer only three age-appropriate programs: Nursery, Junior KG, and Senior KG.</p>
-      <div class="grid">
-        <article class="program"><div class="icon">🧸</div><h2>Nursery</h2><p>A gentle introduction to school through play, sensory exploration, stories, music, movement, colours, shapes, and social interaction.</p><ul><li>Guided play and exploration</li><li>Stories, songs and movement</li><li>Social and emotional growth</li></ul></article>
-        <article class="program"><div class="icon">🔤</div><h2>Junior KG</h2><p>Developing early language, number awareness, communication, creativity, coordination, independence, and classroom habits.</p><ul><li>Early language and number awareness</li><li>Creative expression</li><li>Confidence and independence</li></ul></article>
-        <article class="program"><div class="icon">🔢</div><h2>Senior KG</h2><p>Strengthening foundational literacy, numeracy, confidence, problem-solving, communication, and school readiness through engaging activities.</p><ul><li>Foundational literacy and numeracy</li><li>Problem-solving through play</li><li>Happy school readiness</li></ul></article>
-      </div>
-      <p class="note">For enquiries about any program, please <a href="../contact/" style="color:var(--maroon);font-weight:800">contact the school directly</a>.</p>
-    </div></section>
+    <section class="section"><div class="container split"><div class="years"><b>15+</b>years of nurturing young learners</div><div><span class="eyebrow">Our promise</span><h2 class="title">Every little learner matters</h2><p class="lead">At The Brave Lion Pre-Primary School, we believe early childhood should be filled with curiosity, creativity, confidence, and care. Our play-based environment helps children develop essential language, social, emotional, physical, and thinking skills.</p><p class="lead">Our experienced teachers guide every child through age-appropriate activities, storytelling, music, movement, art, guided play, and interactive classroom experiences.</p><div class="check"><span>Experienced &amp; caring teachers</span><span>Safe, child-friendly environment</span><span>Play-based learning</span><span>Individual attention</span></div></div></div></section>
+
+    <section class="section approach"><div class="container center"><span class="eyebrow">Our approach</span><h2 class="title">Learning through joyful experiences</h2><p class="lead">Simple, meaningful activities help children discover what they can do with confidence.</p><div class="grid"><article class="card"><div class="icon">🧩</div><h3>Learning Through Play</h3><p>Children learn through guided play, exploration, stories, toys, games, and hands-on experiences.</p></article><article class="card"><div class="icon">💛</div><h3>Confidence &amp; Kindness</h3><p>We help children communicate, cooperate, express themselves, and develop positive habits.</p></article><article class="card"><div class="icon">🎨</div><h3>Creative Development</h3><p>Art, music, dance, storytelling, pretend play, and movement encourage imagination and confidence.</p></article></div></div></section>
   </main>
 
-  <footer class="footer"><div class="container"><div class="footer-grid"><div><h2>The Brave Lion Pre-Primary School</h2><p>A joyful, caring, and child-friendly pre-primary school for Nursery, Junior KG, and Senior KG learners.</p></div><div><h3>Explore</h3><a href="../">Home</a><a href="../about/">About Us</a><a href="./">Programs</a><a href="../activities/">Activities</a></div><div><h3>Connect</h3><a href="../admissions/">Admissions</a><a href="../contact/">Contact</a><a href="mailto:thebravelion.inquiry@gmail.com">thebravelion.inquiry@gmail.com</a></div></div><div class="copyright">© 2026 The Brave Lion Pre-Primary School. All rights reserved.</div></div></footer>
+  <footer class="footer"><div class="container"><div class="footer-grid"><div><h2>The Brave Lion Pre-Primary School</h2><p>A joyful, caring, and child-friendly pre-primary school for Nursery, Junior KG, and Senior KG learners.</p></div><div><h3>Explore</h3><a href="../">Home</a><a href="./">About Us</a><a href="../programs/">Programs</a><a href="../activities/">Activities</a></div><div><h3>Connect</h3><a href="../admissions/">Admissions</a><a href="../contact/">Contact</a><a href="mailto:thebravelion.inquiry@gmail.com">thebravelion.inquiry@gmail.com</a></div></div><div class="copyright"><span>© 2026 The Brave Lion Pre-Primary School. All rights reserved.</span><span class="powered">Powered by <a href="https://knovalab.in" target="_blank" rel="noopener">Knovalab</a></span></div></div></footer>
   <script>
 /* The Brave Lion Pre-Primary School: shared behaviour (nav pill, mobile menu, scroll motion) */
 (()=>{
